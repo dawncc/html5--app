@@ -112,3 +112,20 @@ header中可以添加导航按钮, 使用`class="on-right"`或者`class="on-left
  </header>
 ```
 
+### Footer
+``` html
+<section id="main_section">
+    <article id="main" class="active">
+        {{CONTENT}}
+    </article>
+    <footer>
+        <nav>
+            <a href="#" data-icon="menu" class="active"></a>
+            <a href="#" data-icon="share"></a>
+            <a href="#" data-icon="user"></a>
+            <a href="#" data-icon="users"></a>
+        </nav>
+    </footer>
+</section>
+```
+
