@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Lungo  demo</title>
+    <meta name="description" content="">
+    <meta name="author" content="dawncc">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="cleartype" content="on">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="../package/lungo/lungo.css">
+    <link rel="stylesheet" href="../package/lungo/lungo.theme.css">
+    <link rel="stylesheet" href="../package/lungo/lungo.icon.css">
+</head>
+<body>
+    <section id="main" data-transition="slide">
+       <header data-title="Your header" class="extended">
+        <nav class="on-right">
+         <a href="#" data-icon="menu" class="active"></a>
+         <a href="#" data-icon="share"></a>
+         <a href="#" data-icon="user"></a>
+         <button data-view-aside="features" data-icon="forward"></button>
+     </nav>
+ </header>
+  <nav data-control="groupbar" >
+        <a href="#" data-view-article="main-article" data-label="article" data-icon="forward" ></a>
+        <a href="#"  data-view-article="main-article2" data-label="article2" data-icon="home"></a>
+        <a href="#" data-view-article="main-article3" data-label="article3" data-icon="home" class="left"></a>
+    </nav>
+ <article id="main-article">
+    Your content
+    <a href="#"   data-label="  to main section" data-view-section="main_section" data-async="src/sections/main_section.html"></a>
+</article>
+<article id="main-article2" class="active">
+    Your content2
+</article>
+<article id="main-article3">
+    Your content3
+</article>
+<footer data-title="Your footer"> 
+  <nav>
+    <a href="#" data-icon="menu" data-view-article="main-article" ></a>
+    <a href="#" data-view-section="loader" data-icon="share"></a>
+    <a href="src/sections/menu.html" data-view-section="menu" data-icon="user"></a>
+    <a href="src/sections/main_section.html" data-icon="forward"></a>
+</nav>
+</footer>
+</section>  
+
+<script src="../package/quojs/quo.js"></script>
+<script src="../package/lungo/lungo.js"></script>
+<script>
+Lungo.init({
+   name: 'example',
+    resources: ['src/sections/section_to_load.html', ],
+     history: false,
+});
+</script>
+</body>
+
+</html>
