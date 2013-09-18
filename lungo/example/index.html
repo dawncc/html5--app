@@ -21,8 +21,8 @@
     <section id="main" data-transition="slide">
        <header data-title="Your header" class="extended">
         <nav class="on-right">
-         <a href="#" data-icon="menu" class="active"></a>
-         <a href="#" data-icon="share"></a>
+         <a href="#" data-icon="menu" class="active">menu</a>
+         <a href="#" data-icon="share" data-label="share"></a>
          <a href="#" data-icon="user"></a>
          <button data-view-aside="features" data-icon="forward"></button>
      </nav>
@@ -34,7 +34,7 @@
     </nav>
  <article id="main-article">
     Your content
-    <a href="#"   data-label="  to main section" data-view-section="main_section" data-async="src/sections/main_section.html"></a>
+    <a href="#"   data-label="  to main section" data-view-section="main_section" data-async="src/sections/main_section.html" class="i"></a>
 </article>
 <article id="main-article2" class="active">
     Your content2
@@ -60,6 +60,9 @@ Lungo.init({
     resources: ['src/sections/section_to_load.html', ],
      history: false,
 });
+console.log(Lungo.Core.environment());
+Lungo.Core.log(1,Lungo.Core.environment());
+Lungo.Core.log(1,Lungo.Core.isMobile());
 </script>
 </body>
 
